@@ -1,0 +1,135 @@
+:root {
+    --bg-color: rgba(0, 0, 0, 0.7);
+    --text-color: #f5f5f5;
+    --main-color: #ffa500; 
+    --hover-color: #ff5722; 
+    --header-font: 2.5em;
+    --section-font: 2em;
+    --item-font: 1.5em;
+    --price-font: 1.2em;
+    --padding: 20px;
+    --margin: 10px;
+    --card-bg: #333333; 
+    --hover-card-bg: #444444;
+}
+
+
+body {
+    background-color: #111111;
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(rgba(255, 165, 0, 0.8), rgba(255, 87, 34, 0.8));
+    color: var(--bg-color);
+    text-align: center;
+    padding: var(--padding);
+    margin-bottom: var(--margin);
+    position: relative;
+}
+
+header h1 {
+    font-size: var(--header-font);
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+nav {
+    background-color: #333;
+    border-bottom: 1px solid var(--main-color);
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 1.2em;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    border-radius: 20px;
+}
+
+nav a:hover {
+    background-color: var(--hover-color);
+    color: var(--text-color);
+    transform: scale(1.1);
+}
+
+#menu {
+    background: url("image/z1.jpg") center center no-repeat;
+    background-size: cover;
+    padding: var(--padding);
+    border-radius: 10px;
+    margin: var(--padding);
+}
+
+.menu-section {
+    margin-bottom: var(--padding);
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.menu-section.active {
+    display: block;
+    opacity: 1;
+}
+
+.menu-section h2 {
+    font-size: var(--section-font);
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+    padding-bottom: var(--margin);
+    margin-bottom: var(--padding);
+}
+
+.menu-item {
+    background-color: var(--card-bg);
+    padding: 15px;
+    border-radius: 5px;
+    border-bottom: 1px solid var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--margin);
+    transition: background-color 0.3s ease;
+}
+
+.menu-item:hover {
+    background-color: var(--hover-card-bg);
+}
+
+.menu-item h3 {
+    font-size: var(--item-font);
+    margin: 0;
+}
+
+.menu-item p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #ddd;
+}
+
+.menu-item span {
+    font-size: var(--price-font);
+    color: var(--main-color);
+}
+
+
+

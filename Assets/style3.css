@@ -1,0 +1,97 @@
+:root {
+    --main-color: #ff9f0d;
+    --second-color: #f7f7f7;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111111;
+    color: #333;
+}
+html{
+    overflow-y: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.form1, .form2 {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    background-color: #1e1d1d;
+    width: 80%;
+    max-width: 500px;
+    margin: 10px;
+    box-shadow: rgb(227, 182, 46)  4px 10px 20px ; 
+    transition: all 0.3s, box-shadow 0.3s;
+}
+
+.form1:hover, .form2:hover {
+    transform: translateY(-5px);
+    
+
+}
+
+.form1 h3, .form2 h3 {
+    width: auto;
+    border-left: 4px solid var(--main-color);
+    padding: 10px;
+    color: #ff9f0d;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.form1 input, .form2 input {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 15px;
+    background-color: #111111;
+    border: 1px solid rgb(227, 182, 46) ;
+    border-radius: 5px;
+    color: #ffffff;
+    box-sizing: border-box;
+    box-shadow: rgb(227, 182, 46)  4px 5px 10px ; 
+    transition: border-color 0.3s;
+}
+
+.form1 input:focus, .form2 input:focus {
+    border-color: var(--main-color);
+    outline: none;
+}
+
+.form1 button, .form2 button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    
+}
+
+.form1 button:hover, .form2 button:hover {
+    background-color: darkorange;
+}
+
+.toggle-link {
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+    color: var(--main-color);
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.toggle-link:hover {
+    color: darkorange;
+}

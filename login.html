@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up/Login</title>
+  <link rel="stylesheet" href="Assets/style3.css">
+</head>
+<body>
+
+
+
+<div class="container">
+    <div class="form1" id="loginForm">
+        <h3>Login</h3><br>
+        
+        <input type="text" placeholder="Username" id="loginUsername"><br>
+        <input type="password" placeholder="Password" id="loginPassword"><br>
+        <button onclick="validateLogin()">Login</button>
+        <div class="toggle-link" onclick="toggleForms()">New? Create an Account</div>
+    </div>
+    <div class="form2" id="signupForm" style="display: none;">
+        <h3>Sign Up</h3>
+        <input type="text" placeholder="First Name*" id="firstName"><br>
+        <input type="text" placeholder="Last Name*" id="lastName"><br>
+        <input type="email" placeholder="Email Address*" id="email"><br>
+        <input type="password" placeholder="Set A password*" id="password"><br>
+        <button onclick="validateSignup()">Sign-up</button>
+        <div class="toggle-link" onclick="toggleForms()">Already have an account? Login</div>
+    </div>
+</div>
+<script src="Assets/script2.js"></script>
+</body>
+</html>
